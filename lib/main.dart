@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.cyan,
       ),
       home: Sayac(
-        isim: "Bardak",
+        isim: "Kupa",
       ),
     );
   }
