@@ -22,7 +22,7 @@ class GirisSayfasi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple,
+      backgroundColor: Colors.blue,
     );
   }
 }
