@@ -45,8 +45,7 @@ class GirisSayfasi extends StatelessWidget {
               width: MediaQuery.of(context).size.width - 70.0,
               height: 180.0,
               color: Colors.white,
-              child: Text("ABC"),
-            )
+              ),
           ],
         ),
       ),
