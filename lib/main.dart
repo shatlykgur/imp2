@@ -8,16 +8,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Adam(),
-    );
-  }
-}
-
-class Adam extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      
+      theme: ThemeData(
+        primarySwatch: Colors.green
+        ),
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: Text(
+          "Hello World"
+        ),
+      ),
     );
   }
 }
