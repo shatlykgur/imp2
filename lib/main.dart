@@ -9,31 +9,40 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Hello World Flutter Application',
+      title: 'Multiple Layout Wwidget',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        //This is the theme of your application.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
       ),
-      home: MyHomePage(
-        title: 'Home Page',
-      ),
+      home: MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(this.title),
+        title: Text("FittedBox Widget"),
       ),
       body: Center(
-        child: Image.asset('assets/wallpaper.jpg'),
+        child: FittedBox(
+          child: Row(
+            children: [
+              Container(
+                child: Image.asset('assets/wallpaper.jpg'),
+              ),
+              Container(
+                child: Text(
+                  "This is widget",
+                  style: TextStyle(fontSize: 300.0),
+                ),
+              ),
+            ],
+          ),
+          fit: BoxFit.contain,
+        ),
       ),
     );
   }
