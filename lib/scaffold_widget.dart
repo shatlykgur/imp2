@@ -45,6 +45,23 @@ class _MyScaffoldWidgetState extends State<MyScaffoldWidget> {
                 child: Text("God"),
               ),
             ),
+            ListTile(
+              title: Text("Inbox"),
+              leading: Icon(Icons.mail),
+            ),
+            Divider(height: 0.1),
+            ListTile(
+              title: Text("Primary"),
+              leading: Icon(Icons.inbox),
+            ),
+            ListTile(
+              title: Text("Social"),
+              leading: Icon(Icons.people),
+            ),
+            ListTile(
+              title: Text("Promotions"),
+              leading: Icon(Icons.local_offer),
+            ),
           ],
         ),
       ),
