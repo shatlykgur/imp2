@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:improve/gesture_detector.dart';
+import 'package:improve/scaffold_widget.dart';
 import 'package:improve/state_m.dart';
 import 'complex_layout.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: StManagement(),
+      home: MyScaffoldWidget(),
     );
   }
 }
