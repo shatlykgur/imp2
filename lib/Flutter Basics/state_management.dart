@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class StManagement extends StatefulWidget {
+class StateManagement extends StatefulWidget {
   @override
-  _StManagementState createState() => _StManagementState();
+  _StateManagementState createState() => _StateManagementState();
 }
 
-class _StManagementState extends State<StManagement> {
+class _StateManagementState extends State<StateManagement> {
   String _name = "Peter";
 
   @override
